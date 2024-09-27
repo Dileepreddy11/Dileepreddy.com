@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+<!-- Navigation menu-->
+<div class="navbar">
+  <a href="#home" class="active" onclick="toggleActive(this)">Home</a>
+  <a href="#projects" onclick="toggleActive(this)">Projects</a>
+  <a href="#certificates" onclick="toggleActive(this)">Certificates</a>
+  <a href="#services" onclick="toggleActive(this)">Services</a>
+  <a href="#contact" onclick="toggleActive(this)">Contact</a>
+  <a href="#follow" onclick="toggleActive(this)">Follow Us</a>
+  <div class="hamburger-container">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+      <i class="fa fa-bars"></i>
+      </a>
+  </div>
+  </div>
+<br></br>
+    <div class="name-container" id="home">
+      <span class="letter">D</span>
+      <span class="letter">i</span>
+      <span class="letter">l</span>
+      <span class="letter">e</span>
+      <span class="letter">e</span>
+      <span class="letter">p</span>
+    </div> <br>
+    <!-- Sentence -->
+    <div class="name-container">
+      <span class="letter">I</span>
+      <span class="letter"> </span>
+      <span class="letter">am a</span>
+      <span class="letter"> </span>
+      <span class="job-title" id="dynamicJob">Student</span>
+    </div>
+        <!-- Introduction -->
+        <div class="container">
+          <div class="image-container animation-element" id="initial-image">
+            <img src="./images/IMG_20230817_200345.jpg" alt="Click to see introduction" onclick="showIntroduction()"><br></br>
+            <div class="red">Click on the picture.</div>
+          </div>
+          <div class="image-container animation-element" id="my-image" style="display: none;">
+            <img src="./images/IMG_20230515_200344.jpg" alt="Your Name">
+          </div>
+          <div class="introduction animation-element" id="introduction" style="display: none;">
+            <p id="intro-text">Welcome to my portfolio! I'm Dileep, a passionate Student with a love for Web development. I specialize in Creating stunning websites and enjoy Playing Kabaddi.</p>
+            <a href="./images/resume.jpg" class="resume-button" id="resume-button" onclick="downloadResume()">Download Resume</a>
+          </div>
+        </div>
+    <!-- Projects -->
+          <h2>Projects</h2>
+          <div id="projects">
+            <h3>To see all the projects just Follow me on Github or just find the Github Account at the bottom of the Website(Follow us on section)</h3>
+      <div class="containerzz">
+        <div class="cardzz">
+            <div class="face face1">
+            <div class="contentzz">
+               <img src="images/Screenshot (4).png" width="200px" height="100px">
+                <h3>Password-Generator</h3>
+              </div>
+              </div>
+                <div class="face face2">
+                  <div class="contentzz">
+                    <p>The Password Generator project creates strong,randomized passwords with customizable length and character options,enhancing online security.</p>
+                    <a href="https://dileepreddy11.github.io/PasswordGenerator/">Read more</a>
+                  </div>
+                </div>
+        </div>
+           <div class="cardzz">
+              <div class="face face1">
+              <div class="contentzz">
+                 <img src="images/Screenshot (5).png" width="200px" height="100px">
+                  <h3>Temperature-Converter</h3>
+              </div>
+             </div>
+                <div class="face face2">
+                  <div class="contentzz">
+                    <p>The Temperature Converter project simplifies temperature conversions between Celsius, fahrenheit and kelvin by taking the input from the user.</p>
+                    <a href="https://dileepreddy11.github.io/Temp_Converter/">Read more </a>
+               </div>
+             </div>
+            </div>
+           <div class="cardzz">
+               <div class="face face1">
+                <div class="contentzz">
+                    <img src="images/Screenshot (6).png" width="200px" height="100px">
+                     <h3>Age-Calculator</h3>
+                 </div>
+                </div>
+                 <div class="face face2">
+                    <div class="contentzz">
+                       <p>The Age Calculator project swiftly determines a person's age based on their birth date that has been taken from the user.</p>
+                       <a href="https://dileepreddy11.github.io/Age_Calculator/">Read more </a>
+                  </div>
+             </div>
+            </div>
+          </div> 
+        </div> 
+            <!--Certificates-->
+            <h2>Certificates</h2>
+            <div id="certificates">
+            <!-- <h3>The <mark>Each Certificate</mark> will be scrolled for <mark>every 2 seconds</mark> By <mark>automatically</mark> </h3>
+            --> <div class="containerzz">
+            <div id="slider-container">
+              <div id="slider">
+                <div class="slide">
+                  <img src="images/salesforce.jpg" alt="image1">
+                </div>
+                <div class="slide">
+                  <img src="images/octanet.jpg" alt="image2">
+                </div>
+                <div class="slide">
+                  <img src="images/tata.jpg" alt="image3">
+                </div>
+                <div class="slide">
+                  <img src="images/IMG_20231129_195928.jpg" alt="image4">
+               </div>
+                <div class="slide">
+                   <img src="images/IMG_20231129_200007.jpg" alt="image5">
+                </div>
+               <div class="slide">
+                <img src="images/IMG_20231129_200406.jpg" alt="image6">
+             </div>
+             <div class="slide">
+              <img src="images/IMG_20231129_200258.jpg" alt="image7">
+           </div>
+           <div class="slide">
+            <img src="images/IMG_20231129_200235.jpg" alt="image8">
+         </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+            <!--Services-->
+            <h2>Services</h2>
+            <div id="services">
+            <marquee>Our free services will be coming soon and stay tune &#9728 &#9829</marquee>
+            <div class="serv">
+          <div class="Services">
+            <h1><mark> HTML </mark></h1>
+            <h3>Do you want to learn with us? <i class="material-icons" style="font-size:36px;color:aquamarine">tag_faces</i></h3>
+             <p>With Fee :0$</p>
+             <p>From basics to advance.</p> 
+          <div class="Join"> 
+             <a href="https://dileepreddy11.github.io/html-roadmap/">Join</a>
+             </div>
+            </div>
+            <div class="Services">
+              <h1><mark> CSS </mark></h1>
+              <h3>Do you want to learn with us? <i class="material-icons" style="font-size:36px;color:aquamarine">tag_faces</i></h3>
+              <p>With Fee :0$</p>
+             <p>From basics to advance.</p>
+             <div class="Join"> 
+             <a href="#Comingsoon">Join</a>
+            </div>
+            </div>
+              <div class="Services">
+                <h1><mark> JAVASCRIPT </mark></h1>
+                <h3>Do you want to learn with us? <i class="material-icons" style="font-size:36px;color:aquamarine">tag_faces</i></h3>
+                <p>With Fee :0$</p>
+                <p>From basics to advance.</p>
+                <div class="Join"> 
+                <a href="#Comingsoon">Join</a>
+              </div>
+             </div>
+            </div>
+            </div>
+        <!------Get In Touch------>
+            <h2>Get-In Touch</h2>
+            <div id="contact">
+        <div class="contact">
+            <div class="width-33">
+                <h3>
+                  <i class="fa fa-map-marker"></i>
+                </h3>
+                <h4>Address</h4>
+                <p>Hyderabad, ibrahimpatnam </p>
+            </div>
+              <div class="width-33">
+                <h3>
+                  <i class="fa fa-phone"></i>
+                </h3>
+                <h4>Phone</h4>
+                <p><a href="tel:6281648949">Click Here</a></p>
+              </div>
+              <div class="width-33">
+                <h3>
+                  <i class="fa fa-envelope-o"></i>
+                </h3>
+                <h4>Email</h4>
+                <p><a href=mailto:"dileepreddysunkireddy561@gmail.com">Click Here</a></p>
+              </div>
+        <div class="width-33">
+          <h3>
+            <i class="fa fa-whatsapp"></i>
+          </h3>
+        <p><a href="https://wa.me/6281648949?text=Hello, Mr.Dileep" target="_blank">Click Here<br> </br>  <i class="fa fa-hand-pointer-o"></i></a></p>
+        </div>
+        </div>
+      </div>
+        <!----INVITE---->
+        <h2>Invite a frnd</h2>
+        <div id="invite">
+        <div id="qrCode" style="display: none;">
+          <img class="imgtag" src="images/qrcode_dileepreddy11.github.io (1).png" alt="QR code">
+        </div>
+        <p class="pp">Want to scan the QR-Code then click the respective buttons below.?</p>
+        <button onclick="showQR()">Show QR Code</button>
+        <button onclick="hideQR()">Hide QR Code</button>
+          <h3 class="red">OR</h3>
+          <!-- p><mark>Note:- This may not work on all devices such as an example on any online compiler means it should atleast have the stable connectivity with the chrome or firebox.</mark></p>
+      --><p class="pp">Want to share the link to your friends and family member's then click the link below to share.?</p>
+        <button id="shareButton">Share</button>
+        </div>
+        
+        <!----DONATE---->
+        <!-- 
+        <h2>Donate/Help</h2>
+        <div>
+        <p><mark>Note:- The purpose of donating is just like helping us to grow in financial to enhance an efficient services as smooth as. We are not legally en-forcing you to do this activity(payment) this is always upto you only. Remember we'll never ask you to pay without your wish.</mark></p>
+            <div class="payment">
+              <p class="ppp">Select a payment method:</p>
+              <h3>Note 1:- The below payment gateways will re-direct you into respective gateways and the donated/help amount is ₹11/- It will automatically set by us(Which is fixed amount). If you want to donate/help with edited amount then we're recommand you to go UPI payment system, which is convinient to send the amount with your wish.</h3>
+             <h3> Note 2:- Notice that the thing here may sometimes the respective payment gateways are not open as usual because of some default settings in your system. eg.Amazon Pay is a default setting in everyones's device(May by default).So, do through anything.</h3>
+              <div>
+              <a class="paymen" href="#" onclick="openUPIApp('paytm', '6281648949@paytm',11,event)">Pay with Paytm</a>
+              <a class="paymen" href="#" onclick="openUPIApp('gpay', 'dileepreddysunkireddy@okaxis',11,event)">Pay with Gpay</a>
+              <a class="paymen" href="#" onclick="openUPIApp('phonepe', '6281648949@ybl',11,event)">Pay with PhonePe</a>
+            </div>
+            </div>
+            <h3 class="red">OR</h3>
+             <div>
+              <p class="ppp">Select a payment method:</p>
+              <p>1. Click on the UPI ID below to copy it to your clipboard.</p>
+              <p>2. Open your preferred UPI payment app.</p>
+              <p>3. Paste the UPI ID in the recipient field.</p>
+              <p>4. Enter the desired amount and complete the payment.</p>
+              <p id="upiId" onclick="copyToClipboard('YourUPIID')">Your UPI ID: 6281648949@paytm</p>
+             </div>
+             </div>
+            -->
+              <!------FOOTER SECTION------>
+              <h2>Follow Us</h2>
+<div class="footer" id="follow">
+      <div class="footer-sect social-icon width-50">
+        <a href="https://www.facebook.com/sunkireddy.dileepreddy?mibextid=ZbWKwL">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/DSunkireddy?t=cOV8BYf7COmseNHgQhjsaA&s=08">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dileep-reddy-sunkireddy-956a5b220">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/dileep_on_fire?igsh=cm1qOG85a3QxeTJo">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://github.com/Dileepreddy11">
+          <i class="fa fa-github"></i>
+        </a>
+        </div>
+        </div>
+        <div class="footer">
+          <div class="containerr">
+      <div class="footer-sect mt-20 width-50">CopyRight © 2024 dileepreddy.com Website. All Rights Reserved</div>
+    </div>
+  </div>
+     <script src="main.js"></script>
+</body>
+</html>
